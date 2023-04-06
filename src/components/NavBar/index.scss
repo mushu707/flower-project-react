@@ -1,0 +1,19 @@
+.navBar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 9;
+}
+
+.adm-search-bar-active .adm-search-bar-input-box{
+  border-color: #e8486c;
+}
+.adm-input-element{
+  color: #5e5f66;
+}
+
+.adm-button:not(.adm-button-default).adm-button-fill-none{
+  --text-color: #ee5372;
+}

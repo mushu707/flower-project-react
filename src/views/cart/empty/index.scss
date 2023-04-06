@@ -1,0 +1,37 @@
+.cart-notice{
+  --background-color: #ffeaef;
+  --border-color: rgba(255, 76, 154, 0.2);
+  --text-color: #636363;
+  --font-size: 14px;
+}
+
+.cart-login-btn{
+  width: 60px;
+  --background-color: transparent;
+  --border-color: #ff7893 !important;
+  --text-color: #ff7893;
+}
+
+.empty-cart{
+  background-color: white;
+  margin-bottom: 15px;
+
+  & span{
+    font-size: 16px;
+    color: #a5a5a5;
+  }
+}
+
+.guess{
+  background: linear-gradient(to bottom, #fffafa, rgb(255, 234, 240));
+  .guess-title{
+    padding: 20px 0;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+
+  .guess-goods{
+    padding: 0 10px 10px 10px;
+  }
+}

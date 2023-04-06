@@ -1,0 +1,126 @@
+.my-cart{
+  & > .list-item:first-child{
+    margin: 60px 10px 0 10px;
+  }
+
+  .list-item{
+    display: flex;
+    background-color: white;
+    height: 150px;
+    border-radius: 10px;
+    margin: 10px 10px 0 10px;
+    position: relative;
+
+    .item-check{
+      flex: 1;
+      align-items: center;
+      margin-left: 15px;
+    }
+    .item-img{
+      flex: 4;
+      --width: 100px;
+      align-items: center;
+      padding: 10px 0;
+      margin-left: -10px;
+    }
+    .item-info{
+      flex: 5;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0;
+
+      .item-name{
+        flex: 1;
+        max-width: 45vw;
+        font-size: 16px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .item-time{
+        flex: 1;
+
+        & > span{
+          margin-left: 10px;
+        }
+      }
+      .item-count{
+        flex: 0;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        & > div:first-child{
+          margin-left: 10px;
+          --input-font-color: #f895a8;
+          --button-text-color: #ff7893;
+          --button-background-color: white;
+          --input-background-color: white;
+          --border: 2px solid rgba(255, 230, 235, 0.8);
+          --border-radius: 10px;
+        }
+      }
+      .item-price{
+        flex: 1;
+
+        & > span:first-child{
+          text-decoration: line-through;
+          color: #999999;
+        }
+        & > span:last-child{
+          margin-left: 10px;
+          font-size: 16px;
+          color: #ff7893;
+          font-weight: bold;
+        }
+      }
+    }
+    .item-close{
+      flex: 0;
+      position: absolute;
+      right: 0;
+      font-size: 16px;
+      margin: 7px 7px 0 0;
+    }
+  }
+
+  .cart-bar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    height: 51px;
+    background-color: white;
+
+    .buy-total{
+      float: left;
+      font-size: 14px;
+      line-height: 51px;
+      margin-left: 20px;
+
+      & span{
+        color: #ff7893;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+    .buy-btn{
+      width: 130px;
+      height: 100%;
+      float: right;
+
+      font-size: 16px;
+      --background-color: rgb(232, 72, 108);
+      --text-color: white;
+      --border-radius: 0;
+      --border-width: none;
+    }
+  }
+
+}
+
+.adm-checkbox-checked .adm-checkbox-icon{
+  border-color: #ff6181 !important;
+  background-color: #ff6181 !important;
+}

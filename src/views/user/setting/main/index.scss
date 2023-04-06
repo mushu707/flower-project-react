@@ -1,0 +1,30 @@
+.setting{
+  padding: 10px;
+
+  .setting-item{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 14px;
+
+    .setting-item-title{
+      float: left;
+      color: #525252;
+    }
+    .setting-item-link{
+      float: right;
+      color: #868686;
+    }
+  }
+
+  .logout-brn{
+    width: 65%;
+    margin: 30px auto 0;
+    font-size: 15px;
+    background-color: #d94b6b;
+    color: white;
+  }
+}

@@ -1,0 +1,68 @@
+.desc-data{
+  padding: 0 10px;
+  margin-top: 10px;
+  display: flex;
+
+  .desc-img{
+    flex: 1;
+    max-width: 170px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  .desc-info{
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    background-color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    .desc-title{
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .desc-describe{
+      font-size: 12px;
+      padding: 2px 0;
+      color: #494949;
+    }
+    .desc-slogan{
+      margin-top: 5px;
+      padding: 4px 0;
+      color: #71797f;
+      font-size: 13px;
+      border-top: 1px solid #e9edee;
+      border-bottom: 1px solid #e9edee;
+    }
+    .desc-price-box{
+      flex: 1;
+      display: flex;
+
+      .box-left{
+        flex: 4;
+        margin: auto 0 0 0;
+
+        .desc-price{
+          display: block;
+          font-size: 16px;
+          color: rgba(255, 62, 107, 0.8);
+          font-weight: 600;
+        }
+        .desc-payed{
+          display: block;
+          font-size: 12px;
+          color: #71797f;
+        }
+      }
+      & > svg{
+        flex: 1;
+        color: #e8486c;
+        font-size: 24px;
+        margin: auto 0 0 0;
+        display: block;
+        float: right;
+      }
+    }
+  }
+}

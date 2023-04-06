@@ -1,0 +1,31 @@
+.search-content{
+  display: flex;
+  flex-direction: column;
+
+  .search-type{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    .filter{
+      padding: 7px 0;
+      display: flex;
+      justify-content: space-around;
+
+      .filter-item{
+        margin: 5px 15px;
+        text-align: center;
+        font-size: 14px;
+        justify-content: space-around;
+      }
+    }
+  }
+
+  & > div:last-child{
+    margin-bottom: 10px;
+  }
+
+  .active{
+    color: #e8486c;
+  }
+}

@@ -1,0 +1,50 @@
+.collection-item{
+  margin: 12px;
+  display: flex;
+  &:first-child{
+    margin-top: 56px;
+  }
+
+  .collection-img{
+    flex: 4;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .collection-info{
+    flex: 6;
+    padding-left: 12px;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .collection-title{
+      padding-top: 10px;
+    }
+
+    .collection-bottom{
+      padding-bottom: 5px;
+      .collection-price{
+        float: left;
+        line-height: 35.6px;
+        color: #e8486c;
+        & > span:first-child{
+          font-size: 14px;
+        }
+        & > span:last-child{
+          font-size: 18px;
+        }
+      }
+      .collection-addCart{
+        margin-right: 5px;
+        float: right;
+        font-size: 12px;
+        --text-color: white;
+        --background-color: #e8486c;
+        --border-width: none;
+      }
+    }
+  }
+}

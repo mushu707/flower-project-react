@@ -1,0 +1,28 @@
+.details{
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+
+  & > .details-info:last-child > .details-desc{
+    border: none;
+  }
+
+  .details-info{
+    display: flex;
+
+    .details-title{
+      flex: 1.2;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 12px 0;
+    }
+    .details-desc{
+      flex: 8.8;
+      font-size: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid #e8e8e8;
+    }
+  }
+}

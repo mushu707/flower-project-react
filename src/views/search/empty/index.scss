@@ -1,0 +1,33 @@
+.recommend{
+  background-color: white;
+  padding: 0 10px;
+
+  .recommend-head{
+    padding-top: 10px;
+    font-size: 14px;
+    color: #959595;
+  }
+  .recommend-body{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 10px;
+
+    & > a{
+      padding: 5px 15px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      background-color: #efefef;
+      font-size: 12px;
+      text-decoration: none;
+      border-radius: 5px;
+      color: #2f2f2f;
+    }
+  }
+  .recommend-logo{
+    padding: 10px 0 20px;
+    margin: 0 auto;
+    width: 200px;
+  }
+}
+

@@ -1,0 +1,113 @@
+$radius: 10px;
+
+.top-right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .edit{
+    padding-right: 20px;
+    font-size: 14px;
+  }
+  .edit-active{
+    color: #e8486c;
+  }
+}
+
+.view-item{
+  padding: 0 10px;
+  & > .data:nth-child(2){
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+  }
+  & > .data:last-child{
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
+  }
+
+  .date{
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .data{
+    display: flex;
+    background-color: white;
+
+    .data-check{
+      flex: 0;
+      padding-left: 10px;
+      padding-right: 2px;
+    }
+
+    .data-body{
+      display: flex;
+      .data-img{
+        width: 125px;
+        margin:0 7px;
+        padding: 7px 0;
+      }
+      .data-info{
+        flex: 1;
+        padding: 5px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .data-info-title{
+          margin-top: 3px;
+          padding: 0 10px;
+
+          & > span:first-child{
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+          }
+          & > span:last-child{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+          }
+        }
+        .data-info-price{
+          margin-bottom: 5px;
+          padding: 0 10px;
+          color: #e8486c;
+          & > span:first-child{
+            font-size: 14px;
+          }
+          & > span:last-child{
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.bottom-bar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+
+  .delete-btn{
+    padding: 10px 25px;
+    float: right;
+    font-size: 16px;
+    --text-color: white;
+    --background-color: #e8486c;
+    --border-radius: 0;
+    --border-width: none;
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+.adm-checkbox-checked .adm-checkbox-icon{
+  border-color: #ff6181 !important;
+  background-color: #ff6181 !important;
+}

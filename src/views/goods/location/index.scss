@@ -1,0 +1,35 @@
+.location{
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 12px;
+  display: flex;
+
+  .location-left{
+    flex: 1;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .location-center{
+    flex: 7;
+    margin: auto 0;
+    padding-left: 10px;
+
+    & > svg{
+      margin-right: 5px;
+      font-size: 14px;
+    }
+
+    & > div {
+      padding-top: 5px;
+      font-size: 12px;
+      & > span{
+        color: #ff496c;
+      }
+    }
+  }
+  .location-right{
+    flex: 1;
+    font-size: 20px;
+    text-align: center;
+  }
+}
